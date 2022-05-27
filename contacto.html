@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Proyecto Final</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos-servicios.html">Productos y Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Comunicate con nosotros</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-0.33,74.50 C150.00,150.00 330.36,-12.33 500.22,101.15 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(250, 250, 250);"></path>
+            </svg></div>
+    </header>
+
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Ingresa tu consulta</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="images/contact.svg" alt="" class="imagen-about-us">
+                <form onsubmit="return false">
+                    <div class="contenido-textos">
+                        <h4>Apellido</h4>
+                        <input type="text" placeholder=" " id="lastName" />
+                        <h4>Nombre</h4>
+                        <input type="text" placeholder="" id="firstName" />
+                        <h4>Género</h4>
+                        <input type="radio" id="male" name="gender" value="male"> M
+                        <input type="radio" id="female" name="gender" value="female"> F
+                        <h4>Email</h4>
+                        <input type="email" placeholder="Ingresa tu email" id="email" />
+                        <h5>Tú consulta</h5>
+                        <textarea id="question" rows="4"></textarea>
+                    </div>
+                    <button onclick="sendContact();">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+</body>
+<footer class="text-center footer-style">
+    <section class="buttons">
+        <a href="http://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="http://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+    </section>
+</footer>
+
+<script src="js/contacto.js"></script>
+
+</html>
